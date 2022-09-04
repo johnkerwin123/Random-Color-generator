@@ -17,13 +17,14 @@ function intervalrgb() {
   let interval = setInterval(randomColor, intervalTime);
   let countdown = document.getElementById("countdown");
   let timeleft = document.getElementById("setTimer").value;
+  
   let counter = setInterval(function() {
     if (timeleft <= 0) {
       clearInterval(counter);
       clearInterval(interval);
-}
-countdown.innerHTML = `Time left : ${timeleft}`;
-timeleft -= 1;
-}, 1000); 
+    }
+  countdown.innerHTML = `Time left : ${timeleft} seconds`;
+  timeleft -= 1;
+  }, 1000); 
 }
 
