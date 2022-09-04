@@ -25,6 +25,17 @@ function intervalrgb() {
     }
   countdown.innerHTML = `Time left : ${timeleft} seconds`;
   timeleft -= 1;
-  }, 1000); 
+  }, 1000);
+
 }
+
+let resetbtn = document.querySelector("#resetbtn");
+
+resetbtn.addEventListener('click', () =>  {
+
+  document.getElementById("setTimer").value = '';
+  document.getElementById("setInterval").value = '';
+  body.style.background = '';
+
+});
 

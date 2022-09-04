@@ -15,8 +15,8 @@ body{
   width: 370px;
   height: 500px;
   background: linear-gradient( rgb(145, 199, 194), rgb(33, 155, 129));
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,7 @@ h1{
   cursor: pointer;
 }
 
-#btn {
+#btn, #resetbtn{
   align-items: center;
   margin: 5px 5px 5px 5px;
   margin-top: 30px;
@@ -57,14 +57,14 @@ h1{
   font-size: 15px;
 }
 
-#btn:hover {
+#btn:hover, #resetbtn:hover{
   background-color: rgb(146, 218, 229);
   text-transform: uppercase;
 }
 
 input {
   padding: 10px 15px;
-  font-size: 25px;
+  font-size: 20px;
   width: 200px;
   margin-top: 20px;
   border-radius: 6px;
@@ -80,3 +80,5 @@ label {
 h2 {
   margin-bottom: 20px;
 }
+
+
